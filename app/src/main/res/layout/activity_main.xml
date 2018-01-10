@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.myapplicationone.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/login_imageview"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText4"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="@string/Username"
+            android:inputType="textPersonName"
+            android:labelFor="@id/editText3" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/Password"
+            android:labelFor="@id/editText4" />
+
+        <Button
+            android:id="@+id/loginButtonIdentifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="41dp"
+            android:text="@string/login" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

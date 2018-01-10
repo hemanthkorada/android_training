@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My ApplicationOne</string>
+    <string name="app_nameone" />
+    <string name="some_explanation_about_the_input">Some explanation about the input...</string>
+    <string name="login_imageview">login imageview</string>
+    <string name="sdsad">sdsad</string>
+    <string name="hello_world" />
+    <string name="login">Login</string>
+    <string name="aaa">AAA</string>
+    <string name="Username">username</string>
+    <string name="Password">password</string>
+</resources>
