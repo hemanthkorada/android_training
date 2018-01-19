@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 public class SplashActivity extends AppCompatActivity {
 
     private Handler mHandler = new Handler();
+
     private Runnable mRunnable = new Runnable() {
         @Override
         public void run() {
@@ -29,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        mHandler.postDelayed(mRunnable, 5000);
+        mHandler.postDelayed(mRunnable, 5);
     }
 
     @Override

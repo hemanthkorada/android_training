@@ -18,7 +18,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:contentDescription="@string/login_imageview"
-            app:srcCompat="@android:drawable/btn_star_big_on" />
+            app:srcCompat="@android:drawable/btn_star_big_on"
+            android:id="@+id/imageView" />
 
         <EditText
             android:id="@+id/editText3"
@@ -51,5 +52,14 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="41dp"
             android:text="@string/login" />
+
+        <Button
+            android:id="@+id/signUpIdenfifier"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_below="@+id/loginButtonIdentifier"
+            android:layout_marginTop="11dp"
+            android:text="@string/signup" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

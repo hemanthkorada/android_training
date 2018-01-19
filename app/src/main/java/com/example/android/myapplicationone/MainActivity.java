@@ -12,7 +12,9 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
      private Button button;
-     private EditText usernameEditText;
+     private Button registratioButton;
+
+    private EditText usernameEditText;
      private EditText passwordEditText;
 
 
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         button = (Button) findViewById(R.id.loginButtonIdentifier);
+        registratioButton = (Button) findViewById(R.id.signUpIdenfifier);
+
         usernameEditText = (EditText) findViewById(R.id.editText3);
         passwordEditText = (EditText) findViewById(R.id.editText4);
 
@@ -37,6 +41,17 @@ public class MainActivity extends AppCompatActivity {
                 mainActivityIndent.putExtra("key",usernameEditText.getText().toString());
 
                 startActivity(mainActivityIndent); // startActivity allow you to move
+            }
+        });
+
+        registratioButton.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent registrationscreen = new Intent(MainActivity.this,
+                        Registrationscreen.class);
+                startActivity(registrationscreen);
             }
         });
     }
